@@ -11,14 +11,30 @@ const Navbar = () => {
         <img className='mx-2 w-10' src={logo} alt="logo" />
     </div>
 <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-    <FaLinkedin/>
-    <FaGithub/>
-    <FaSquareXTwitter/>
-    <FaInstagram/>
+    <a href="https:www.linkedin.com/in/ossyemeruwa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600">< FaLinkedin/></a>
+
+    <a href="https://github.com/Ossy-em"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600"><FaGithub/></a>
+    
+    <a href="https://x.com/ossyReactdev"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600"><FaSquareXTwitter/></a>
+    
+
+    <a href="https://www.instagram.com/ossy.em/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600"><FaInstagram/></a>
+    
 </div>
 
   </nav>
-
    
 }
 
