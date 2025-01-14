@@ -5,23 +5,22 @@ import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting responsive and user-friendly web applications. With years of hands-on experience, I have honed my skills in technologies like React, Firebase, Material-UI, and ApexCharts. My goal is to leverage my expertise to create engaging solutions that enhance user satisfaction and drive business growth.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile frontend developer with a passion for building efficient and user-friendly web applications. With years of professional experience, I have worked with a variety of technologies, including React, Firebase, Material-UI, and ApexCharts.
+export const ABOUT_TEXT = `
+Hey, I’m a frontend developer who loves building web apps that look great and work even better. With years of professional experience, I’ve worked with tools like React, Firebase, Material-UI, and ApexCharts to create projects that are simple, smooth, and useful. My journey into web development started with me just being curious about how websites work, and now I’m all about solving problems and creating awesome user experiences.  
 
-My journey in web development began with a deep curiosity about how websites are built, and it has grown into a career where I continuously learn and adapt to new challenges. I enjoy creating seamless designs and writing clean, maintainable code, always aiming for a smooth and engaging user experience.
-
-I thrive in collaborative environments and take pride in solving problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new tools and frameworks, tracking my productivity, and improving workflows to stay efficient.`;
+When I’m not coding, I’m probably watching football (huge FC Barcelona fan here). I also enjoy catching NBA games every now and then. Outside of sports, I like trying out new tech, finding ways to sleep earlier than 3am, and just figuring out better ways to do things.  `;
 
 export const EXPERIENCES = [
   {
     year: "2024 - 2025",
-    role: "Frontend Developer (Contact)",
+    role: "Frontend Developer (Contract)",
     company: "Nigeria Shippers Council",
     description: `Developed a staff request portal using React.js and Firebase, enabling seamless form submissions, real-time data updates, and efficient request tracking. Designed user-friendly interfaces and integrated authentication and notification systems to enhance user experience.`,
     technologies: ["Javascript", "React.js", "Next.js", "Firebase"],
   },
   {
     year: "November. 2023",
-    role: "Frontend Developer (Contact)",
+    role: "Frontend Developer (Contract)",
     company: "Educore",
     description: ` Lead a team of four—including two front-end developers (myself included), a back-end developer, and a UI designer—to successfully build a website for Educore. Managed the project from initial concept to final deployment, ensuring smooth collaboration and the timely delivery of a high-quality, user-centric product`,
     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
@@ -35,10 +34,10 @@ export const EXPERIENCES = [
   },
   {
     year: "Jan 2022 - July 2022",
-    role: "Software Engineer (Intern)",
-    company: "Hiit Technologies",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["JavaScript", "React", "HTML", "CSS"],
+    role: "Frontend Engineer (Intern)",
+    company: "Hiit ",
+    description: `Worked as a frontend developer, gaining hands-on experience with HTML, CSS, JavaScript, and jQuery. Built various web applications, focusing on creating dynamic, responsive, and user-friendly interfaces. Developed foundational skills in web design, layout, and interactivity, setting the stage for future development in modern frontend technologies..`,
+    technologies: ["JavaScript", "jQuery", "HTML", "CSS"],
   },
 ];
 
