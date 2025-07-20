@@ -52,6 +52,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+
+   {
+    title: "GPT-3 Landing Page",
+    image: project3,
+    description:
+      "A modern landing page that highlights GPT-3’s features, use cases, and clear CTAs in a sleek, responsive layout",
+    technologies: ["HTML", "CSS", "Javascript", "Framer Motion", "Tailwind"],
+    link: "https://gpt1-ossy-qfls0nvaz-ossys-projects.vercel.app/",
+  },
   {
     title: "Gericht Fine Dining",
     image: project1,
@@ -60,21 +69,15 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Tailwind"],
     link: "https://my-app-gamma-navy.vercel.app/.com",
   },
-  {
+ 
+ 
+   {
     title: "Staff Request Portal",
     image: project2,
     description:
       "An application for staff to request office items also have an admin approval built in",
     technologies: ["HTML", "CSS", "React", "Firebase", "Tailwind"],
     link: "https://nsc-red.vercel.app/",
-  },
-  {
-    title: "GPT-3 Landing Page",
-    image: project3,
-    description:
-      "A modern landing page that highlights GPT-3’s features, use cases, and clear CTAs in a sleek, responsive layout",
-    technologies: ["HTML", "CSS", "Javascript", "Framer Motion", "Tailwind"],
-    link: "https://gpt1-ossy-qfls0nvaz-ossys-projects.vercel.app/",
   },
   {
     title: "Blogging Platform",
