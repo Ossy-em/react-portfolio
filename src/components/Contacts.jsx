@@ -1,5 +1,9 @@
 import {CONTACT} from '../constants'
 import { motion } from 'framer-motion'
+import { FaLinkedin } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
+import { FaSquareXTwitter } from 'react-icons/fa6'
+import { FaInstagram } from 'react-icons/fa6'
 const Contacts = () => {
     return(
         <div className="border-b border-neutral-900 pb-20">
@@ -20,6 +24,29 @@ const Contacts = () => {
                 transition={{duration:1}} className='my-4'>{CONTACT.phoneNo}</motion.p>
                 <a href="#" className='b0rder-b'>{CONTACT.email}</a>
 
+            </div>
+            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+                <a href="https:www.linkedin.com/in/ossyemeruwa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600">< FaLinkedin/></a>
+            
+                <a href="https://github.com/Ossy-em"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600"><FaGithub/></a>
+                
+                <a href="https://x.com/ossyReactdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600"><FaSquareXTwitter/></a>
+                
+            
+                <a href="https://www.instagram.com/ossy.em/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600"><FaInstagram/></a>
+                
             </div>
         </div>
     )
