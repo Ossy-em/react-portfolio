@@ -18,11 +18,12 @@ const Projects = ()=> {
                 transition={{duration:1}}
                 className="w=full lg:w-1/4">
                 <img src={project.image} 
-                width={150} 
-                height={150}
+                width={250} 
+                height={200}
                 alt="project.title" 
                 className="rounded mb-6"/>
                 </motion.div>
+                
 
                 <motion.div 
                 whileInView={{opacity:1, x:0, }}
@@ -34,9 +35,20 @@ const Projects = ()=> {
                 {project.technologies.map((tech, index) => (
                     <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
                 ))}
+                  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-4 text-sm text-purple-1900 hover:underline font-medium"
+  >
+    View Project →
+  </a>
                 </motion.div>
+
+                
                 </div>
-               ))}</div> 
+               ))}
+               </div> 
                 </div>
     )
 }
