@@ -2,13 +2,13 @@ import { link } from "framer-motion/client";
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting responsive and user-friendly web applications. With years of hands-on experience, I have honed my skills in technologies like React, Firebase, Material-UI, and ApexCharts. My goal is to leverage my expertise to create engaging solutions that enhance user satisfaction and drive business growth.`;
 
 export const ABOUT_TEXT = `
 Hey, I’m a frontend developer who enjoys turning ideas into smooth, user-friendly web apps. I’ve worked with various frontend libraries and frameworks to build projects that look great and feel great to use. I got into web dev out of curiosity, and now I’m all about solving real problems with clean design and good code.
-When I’m not coding, I’m probably watching Barça, gaming`;
+When I’m not coding, I’m probably watching Barca's match or gaming.`;
 
 export const EXPERIENCES = [
   {
@@ -80,11 +80,11 @@ export const PROJECTS = [
     link: "https://nsc-red.vercel.app/",
   },
   {
-    title: "Blogging Platform",
+    title: "Project-pad (Not completed)",
     image: project4,
     description:
-      "A modern landing page that highlights GPT-3’s features, use cases, and clear CTAs in a sleek, responsive layout",
-    technologies: ["HTML", "CSS", "Javascript"],
+      "A full-stack web application designed to streamline academic and professional research workflows. Users can create project-specific workspaces to organize papers, generate AI-powered summaries, manage citations, and collaborate in real time.",
+    technologies: ["Next.js", "React", "Tailwind", "Django", "PostgreSQL", "OpenAI API"],
   },
 ];
 
