@@ -37,7 +37,6 @@ const Projects = ()=> {
                 ))}
                   <a
     href={project.link}
-    target="_blank"
     rel="noopener noreferrer"
     className="inline-block mt-4 text-sm text-purple-1900 hover:underline font-medium"
   >
