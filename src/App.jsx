@@ -16,14 +16,14 @@ const App = () => {
 
       <div className="container mx-auto px-8">
         <Navbar />
-        {/* <div className="mt-20 space-y-32"> */}
+        
           <Hero />
           <About />
           <Technologies />
           <Experience />
           <Project />
           <Contacts/>
-        {/* </div> */}
+       
       </div>
     </div>
   );

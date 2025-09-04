@@ -3,6 +3,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting responsive and user-friendly web applications. With years of hands-on experience, I have honed my skills in technologies like React, Firebase, Material-UI, and ApexCharts. My goal is to leverage my expertise to create engaging solutions that enhance user satisfaction and drive business growth.`;
 
@@ -52,14 +53,22 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+   {
+    title: "Soundemy Landing Page",
+    image: project5,
+    description:
+      "A modern landing page that highlights Soundemy’s features, How it works, and Products in a sleek, responsive layout",
+    technologies: ["Next js", "Tailwind"],
+    link: "https://soudemy-app.vercel.app/",
+  },
 
    {
     title: "GPT-3 Landing Page",
     image: project3,
     description:
       "A modern landing page that highlights GPT-3’s features, use cases, and clear CTAs in a sleek, responsive layout",
-    technologies: ["HTML", "CSS", "Javascript", "Framer Motion", "Tailwind"],
-    link: "https://gpt1-ossy-qfls0nvaz-ossys-projects.vercel.app/",
+    technologies: [ "Javascript", "Framer Motion", "Tailwind"],
+    link: "https://gpt1-ossy.vercel.app/",
   },
   {
     title: "Gericht Fine Dining",
