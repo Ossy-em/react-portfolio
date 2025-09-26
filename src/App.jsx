@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import Experience from './components/Expertise';
@@ -17,7 +17,7 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         
-          <Hero />
+          {/* <Hero /> */}
           <About />
           <Technologies />
           <Experience />

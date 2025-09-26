@@ -6,7 +6,8 @@ import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/nft.png";
 
-export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting responsive and user-friendly web applications. With years of hands-on experience, I have honed my skills in technologies like React, Firebase, Material-UI, and ApexCharts. My goal is to leverage my expertise to create engaging solutions that enhance user satisfaction and drive business growth.`;
+export const HERO_CONTENT = `I’m a frontend developer passionate about building responsive, user-friendly web applications. Skilled in React, Next.js, and modern web tools, I create engaging digital experiences that delight users and support business growth.`;
+
 
 export const ABOUT_TEXT = `
 Hey, I’m a frontend developer who enjoys turning ideas into smooth, user-friendly web apps. I’ve worked with various frontend libraries and frameworks to build projects that look great and feel great to use. I got into web dev out of curiosity, and now I’m all about solving real problems with clean design and good code.
