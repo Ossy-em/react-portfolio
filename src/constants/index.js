@@ -4,6 +4,7 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/nft.png";
 
 export const HERO_CONTENT = `I am a passionate frontend developer with a knack for crafting responsive and user-friendly web applications. With years of hands-on experience, I have honed my skills in technologies like React, Firebase, Material-UI, and ApexCharts. My goal is to leverage my expertise to create engaging solutions that enhance user satisfaction and drive business growth.`;
 
@@ -53,6 +54,14 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+    {
+    title: "NFT Portfolio App",
+    image: project6,
+    description:
+      "An interactive NFT portfolio app built. It showcases trending collections, largest sales, and recent transactions — with wallet connect & mint functionality.",
+    technologies: ["Next js", "Tailwind",  "React Query", "Opensea API", "Wagmi","Web3Modal",  "Dev.to API"],
+    link: "https://nft-lac-ten.vercel.app/",
+  },
    {
     title: "Soundemy Landing Page",
     image: project5,
