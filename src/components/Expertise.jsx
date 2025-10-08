@@ -1,57 +1,58 @@
+// components/Experience.jsx
 import React from 'react';
-import { EXPERIENCES } from '../constants';
 import { motion } from 'framer-motion';
-const Experience = () => {
+import { EXPERIENCES } from '../constants';
+
+export default function Experience() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center border-b border-neutral-900 pb-4">
-      <motion.h1 
-      whileInView={{opacity: 1, y: 0}}
-      initial={{opacity: 0, y: -100 }}
-      transition={{duration: 0.5}}
-      className="my-20 text-center text-4xl">Experience</motion.h1>
-
-      <div>
-        {EXPERIENCES.map((experience, index) => (
-         <div className="mb-8 flex flex-col lg:flex-row items-start gap-4 lg:justify-center">
-  <motion.div 
-    whileInView={{ opacity: 1, x: 0 }}
-    initial={{ opacity: 0, x: -100 }}
-    transition={{ duration: 1 }}
-    className="w-full sm:w-[90%] lg:w-1/4"
-  >
-    <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-  </motion.div>
-
-  <motion.div 
-    whileInView={{ opacity: 1, x: 0 }}
-    initial={{ opacity: 0, x: 100 }}
-    transition={{ duration: 1 }}
-    className="w-full sm:w-[90%] lg:w-3/4 max-w-xl"
-  >
-    <h6 className="mb-2 font-semibold">
-      {experience.role} -{' '}
-      <span className="text-sm text-purple-100">
-        {experience.company}
-      </span>
-    </h6>
-    <p className="mb-4 text-neutral-400">{experience.description}</p>
-    <div className="flex flex-wrap gap-2">
-      {experience.technologies.map((tech, index) => (
-        <span
-          key={index}
-          className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+    <section id="experience" className="py-20 px-6 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-white">
+      <div className="max-w-4xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-4xl md:text-5xl font-bold mb-16 text-center"
         >
-          {tech}
-        </span>
-      ))}
-    </div>
-  </motion.div>
-</div>
+          Work Experience
+        </motion.h2>
 
-        ))}
+        <div className="space-y-12">
+          {EXPERIENCES.map((exp, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="border-l-4 border-gray-900 pl-8 py-4"
+            >
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{exp.company}</h3>
+                <span className="text-sm text-gray-500 whitespace-nowrap ml-4">{exp.year}</span>
+              </div>
+
+
+              <p className="text-base md:text-lg text-blue-400 font-medium mb-4">{exp.role}</p>
+
+
+              <p className="text-gray-700 mb-4 leading-relaxed text-sm md:text-base">{exp.description}</p>
+
+       
+              <div className="flex flex-wrap gap-2">
+                {exp.technologies.map((tech, i) => (
+                  <span 
+                    key={i} 
+                    className="px-3 py-1 bg-white border border-gray-300 rounded-full text-xs font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Experience;
+}

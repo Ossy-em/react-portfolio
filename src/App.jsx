@@ -1,32 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-// import Hero from './components/Hero';
+import Hero from './components/Hero';
 import About from './components/About';
-import Technologies from './components/Technologies';
+import Projects from './components/Projects';
 import Experience from './components/Expertise';
-import Project from './components/Projects';
-import Contacts from './components/Contacts';
+import Contact from './components/Contacts';
+import Footer from './components/Footer';
 
-const App = () => {
+export default function App() {
+  const [activeSection, setActiveSection] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(id);
+    }
+  };
+
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      </div>
-
-      <div className="container mx-auto px-8">
-        <Navbar />
-        
-          {/* <Hero /> */}
-          <About />
-          <Technologies />
-          <Experience />
-          <Project />
-          <Contacts/>
-       
-      </div>
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      <Navbar scrolled={scrolled} scrollToSection={scrollToSection} />
+      <Hero scrollToSection={scrollToSection} />
+      <About />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
     </div>
   );
-};
-
-export default App;
+}

@@ -5,25 +5,28 @@ import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/nft.png";
+import project7 from "../assets/projects/project-7.png";
+import project8 from "../assets/projects/project-8.png";
 
-export const HERO_CONTENT = `I’m a frontend developer passionate about building responsive, user-friendly web applications. Skilled in React, Next.js, and modern web tools, I create engaging digital experiences that delight users and support business growth.`;
-
+export const HERO_CONTENT = `I'm Ossy, a frontend developer exploring the future of blockchain and stocks — creating web apps that bridge innovation and real-world impact.`;
 
 export const ABOUT_TEXT = `
-Hey, I’m a frontend developer who enjoys turning ideas into smooth, user-friendly web apps. I’ve worked with various frontend libraries and frameworks to build projects that look great and feel great to use. I got into web dev out of curiosity, and now I’m all about solving real problems with clean design and good code.
-When I’m not coding, I’m probably watching Barca's match or gaming.`;
+I’m a frontend developer, and deep-tech fan on a mission to build things that actually matter. Lately, I’ve been really into blockchain and finance, finding ways to make complex systems feel simple and useful.`;
 
 export const EXPERIENCES = [
   {
     year: "2025 - Present",
     role: "Frontend Developer (UK, Remote)",
     company: "Axiom Fuse",
-    description: ` Work on building frontend applications for clients and internal applications`,
+    description: ` Work on building faster, smarter, and leaner - harnessing emerging technologies like AI and blockchain`,
     technologies: [
       "React",
       "Next.js",
       "Angular",
       "Tailwind",
+      "OpenseaAI",
+      "Wagmi",
+      "Web3Modal",
       "AWS",
       "Git",
       "Figma",
@@ -33,9 +36,9 @@ export const EXPERIENCES = [
   {
     year: "2024 - 2025",
     role: "Frontend Developer (Contract)",
-    company: "Nigeria Shippers Council",
+    company: "NSC",
     description: `Developed a staff request portal using React.js and Firebase, enabling seamless form submissions, real-time data updates, and efficient request tracking. Designed user-friendly interfaces and integrated authentication and notification systems to enhance user experience.`,
-    technologies: ["Javascript", "React.js", "Next.js", "Firebase"],
+    technologies: ["Javascript", "React.js", "Next.js", "Tailwind", "Firebase"],
   },
 
   {
@@ -43,7 +46,22 @@ export const EXPERIENCES = [
     role: "Frontend Developer",
     company: "Freelancer",
     description: `Developed numerous projects for clients, including landing pages, eCommerce platforms, and dashboards for various brands, delivering customized solutions that met client needs and received positive feedback.`,
-    technologies: ["HTML", "CSS", "Javascript", "React"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "OpenseaAI",
+      "Wagmi",
+      "Web3Modal",
+      "Material UI",
+      "AWS",
+      "Git",
+      "Figma",
+      "PostgreSQL",
+      "Vercel",
+      "Supabase",
+      
+    ],
   },
   {
     year: "Jan 2022 - July 2022",
@@ -55,60 +73,77 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
-    {
-    title: "NFT Portfolio App",
+  {
+    title:
+      "Building NFT Vault: Exploring Blockchain Integration and Digital Ownership",
     image: project6,
     description:
-      "An interactive NFT portfolio app built. It showcases trending collections, largest sales, and recent transactions — with wallet connect & mint functionality.",
-    technologies: ["Next js", "Tailwind",  "React Query", "Opensea API", "Wagmi","Web3Modal",  "Dev.to API"],
+      "An NFT platform concept where users can browse and manage digital collectibles. Worked on the frontend experience and learned how NFTs connect to blockchain data, wallets, and metadata. Focusing on how to make that tech feel simple for everyday users.",
+    technologies: [
+      "Next js",
+      "Tailwind",
+      "React Query",
+      "Opensea API",
+      "Wagmi",
+      "Web3Modal",
+      "Dev.to API",
+    ],
     link: "https://nft-lac-ten.vercel.app/",
   },
-   {
-    title: "Soundemy Landing Page",
+
+  {
+    title: "Designed Soundemy: A Fintech Experience Around Money Management",
     image: project5,
     description:
-      "A modern landing page that highlights Soundemy’s features, How it works, and Products in a sleek, responsive layout",
+      "A responsive landing page for a fintech app that helps users manage and track their funds. I focused on clean design, clear feature storytelling, and smooth frontend implementation to give the product a modern, trustworthy feel.",
     technologies: ["Next js", "Tailwind"],
     link: "https://soudemy-app.vercel.app/",
   },
 
-   {
-    title: "GPT-3 Landing Page",
+  {
+    title: "Telegram Event Bot: Real-time High Impact News Alert",
+    image: project7,
+    description:
+      "Built a Python bot that monitors verified economic calendars and forwards only high-impact events (NFP, CPI, FOMC, interest-rate decisions) as formatted alerts to Telegram. Focused on reliable fetching, duplicate suppression, and lightweight deployment.",
+    technologies: ["Python3", "Telegram Bot"],
+    link: "https://github.com/Ossy-em/mt-news-forwarder"
+  },
+
+  {
+    title:
+      "Designed GPT-3: Showcasing AI Through a Modern, Minimal Landing Page",
     image: project3,
     description:
-      "A modern landing page that highlights GPT-3’s features, use cases, and clear CTAs in a sleek, responsive layout",
-    technologies: [ "Javascript", "Framer Motion", "Tailwind"],
+      "A sleek and responsive landing page highlighting GPT-3’s core features, real-world use cases, and clear CTAs. The goal was to create a design that feels intelligent and futuristic while keeping the layout simple and easy to navigate.",
+    technologies: ["Javascript", "Framer Motion", "Tailwind"],
     link: "https://gpt1-ossy.vercel.app/",
   },
   {
-    title: "Gericht Fine Dining",
-    image: project1,
+    title: "Building Stock AI: A Smarter Way to Track the Markets",
+    image: project8,
     description:
-      "A modern restaurant website built with React & styled components.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
-    link: "https://my-app-gamma-navy.vercel.app/.com",
-  },
- 
- 
-   {
-    title: "Staff Request Portal",
-    image: project2,
-    description:
-      "An application for staff to request office items also have an admin approval built in",
-    technologies: ["HTML", "CSS", "React", "Firebase", "Tailwind"],
-    link: "https://nsc-red.vercel.app/",
+      "Stock AI is an all-in-one platform for global market insights. It brings together live stock data, market indexes, news updates, and smart comparisons — all in one smooth, data-driven interface. The goal is to make market intelligence clearer, faster, and more accessible for everyone.",
+    technologies: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Chart.js",
+      "OpenAI",
+      "Supabase",
+    ],
   },
   {
-    title: "Project-pad (Not completed)",
-    image: project4,
+    title:
+      "Designed Gericht Fine Dining: A Modern Restaurant Website Experience",
+    image: project1,
     description:
-      "A full-stack web application designed to streamline academic and professional research workflows. Users can create project-specific workspaces to organize papers, generate AI-powered summaries, manage citations, and collaborate in real time.",
-    technologies: ["Next.js", "React", "Tailwind", "Django", "PostgreSQL", "OpenAI API"],
+      "A stylish and responsive restaurant website built with React and Styled Components. It focuses on smooth navigation, elegant UI, and a clean layout that brings the restaurant’s brand and menu to life",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://my-app-gamma-navy.vercel.app/.com",
   },
 ];
 
 export const CONTACT = {
   address: "Lagos, Nigeria",
-  phoneNo: "+234 903 0251 90",
   email: "emosinachi@gmail.com",
 };

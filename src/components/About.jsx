@@ -1,79 +1,87 @@
-import { useState } from "react";
-import aboutImg from "../assets/a.jpg";
-import { ABOUT_TEXT } from "../constants";
-import { motion } from "framer-motion";
+// components/About.jsx
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
+import { ABOUT_TEXT } from '../constants';
+import myImage from '../assets/ossy.jpeg';
 
-// 👇 define container here
-const container = (delay = 0) => ({
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, delay },
-  },
-});
-
-const About = () => {
-  const [loading, setLoading] = useState(true);
+export default function About() {
+  const keyTechs = ["React", "Next.js", "TypeScript", "OpenAI", "Tailwind CSS"];
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
-      <div className="text-center mb-12">
-        <motion.h1
-          variants={container(0)}
-          initial="hidden"
-          animate="visible"
-          className="pb-4 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
-        >
-          Ossy Emeruwa
-        </motion.h1>
-
-        <motion.span
-          variants={container(0.5)}
-          initial="hidden"
-          animate="visible"
-          className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
-        >
-          Frontend Developer
-        </motion.span>
-      </div>
-
-      <div className="flex flex-col lg:flex-row">
-        {/* Image Section */}
+    <section id="about" className="py-20 px-6 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-white">
+      <div className="max-w-5xl mx-auto">
         <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8 flex items-center justify-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          {loading && (
-            <div className="rounded-2xl w-[250px] h-[300px] lg:w-[300px] bg-neutral-800 animate-pulse" />
-          )}
 
-          <img
-            className={`rounded-2xl w-[250px] lg:w-[300px] h-auto transition-opacity duration-500 ${
-              loading ? "opacity-0" : "opacity-100"
-            }`}
-            src={aboutImg}
-            alt="About"
-            onLoad={() => setLoading(false)}
-          />
-        </motion.div>
+          <div className="flex flex-col md:flex-row items-start justify-center gap-12">
+            
 
-        {/* Text Section */}
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8 flex items-center"
-        >
-          <motion.p className="my-2 max-w-2xl py-6 text-center lg:text-left">
-            {ABOUT_TEXT}
-          </motion.p>
+            <div className="flex flex-col items-center mx-auto md:mx-0">
+              <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
+                <img 
+                  src={myImage} 
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <FaMapMarkerAlt className="text-red-500" />
+                <span>Remote</span>
+              </div>
+            </div>
+
+
+            <div className="flex-1 max-w-2xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Ossy Emeruwa</h2>
+              <p className="text-lg text-gray-600 mb-6">Frontend Engineer</p>
+
+              <div className="flex items-center gap-3 mb-8">
+                <a 
+                  href="https://github.com/Ossy-em" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-full hover:border-gray-900 transition-all text-sm font-medium"
+                >
+                  <FaGithub className="text-lg" />
+                  <span>GitHub</span>
+                </a>
+                
+                <a 
+                  href="https://www.linkedin.com/in/ossyemeruwa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all text-sm font-medium"
+                >
+                  <FaLinkedin className="text-lg" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>           
+              <div className="mb-8">
+                <p className="text-base text-gray-700 leading-relaxed">
+                  {ABOUT_TEXT}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {keyTechs.map((tech) => (
+                  <span 
+                    key={tech} 
+                    className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default About;
+}

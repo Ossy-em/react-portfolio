@@ -1,55 +1,38 @@
-import {CONTACT} from '../constants'
-import { motion } from 'framer-motion'
-import { FaLinkedin } from 'react-icons/fa6'
-import { FaGithub } from 'react-icons/fa6'
-import { FaSquareXTwitter } from 'react-icons/fa6'
-import { FaInstagram } from 'react-icons/fa6'
-const Contacts = () => {
-    return(
-        <div className="border-b border-neutral-900 pb-20">
-            <motion.h1 
-            whileInView={{opacity:1, y:0}}
-            initial={{opacity:0, y:-100}}
-            transition={{duration:0.5}}
-            className="my-10 text-center text-4xl">Get in Touch</motion.h1>
-            <div className="text-center tracking-tighter ">
-                <motion.p 
-                whileInView={{opacity:1, x:0}}
-                initial={{opacity:0, x:-100}}
-                transition={{duration:1}}
-                className="my-4">{CONTACT.address}</motion.p>
-                <motion.p 
-                whileInView={{opacity:1, x:0}}
-                initial={{opacity:0, x:100}}
-                transition={{duration:1}} className='my-4'>{CONTACT.phoneNo}</motion.p>
-                <a href="#" className='b0rder-b'>{CONTACT.email}</a>
+import React from 'react';
+import { motion } from 'framer-motion';
+import { CONTACT } from '../constants';
 
+export default function Contact() {
+  return (
+    <section id="contact" className="py-32 px-6 bg-gray-900 text-white">
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-5xl md:text-6xl font-bold mb-8">Let's Work Together</h2>
+          <p className="text-xl text-gray-300 mb-12">
+            I'm always open to discussing new projects and opportunities.
+          </p>
+          
+          <div className="space-y-4 mb-12">
+            <div className="text-lg">
+              <span className="text-gray-400">Email: </span>
+              <a href={`mailto:${CONTACT.email}`} className="hover:text-blue-400 transition-colors">
+                {CONTACT.email}
+              </a>
             </div>
-            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-                <a href="https:www.linkedin.com/in/ossyemeruwa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600">< FaLinkedin/></a>
-            
-                <a href="https://github.com/Ossy-em"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600"><FaGithub/></a>
-                
-                <a href="https://x.com/ossyReactdev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600"><FaSquareXTwitter/></a>
-                
-            
-                <a href="https://www.instagram.com/ossy.em/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600"><FaInstagram/></a>
-                
-            </div>
-        </div>
-    )
+          </div>
+
+          <a 
+            href={`mailto:${CONTACT.email}`}
+            className="inline-block px-8 py-4 bg-white text-gray-900 rounded-full hover:bg-gray-100 transition-all duration-300 font-semibold"
+          >
+            Get In Touch
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
-
-export default  Contacts
