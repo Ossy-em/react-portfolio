@@ -90,12 +90,12 @@ function ProjectCard({ project, index }) {
             />
           </motion.div>
 
-          {/* Description */}
+ 
           <p className="text-base text-gray-700 leading-relaxed">
             {project.description}
           </p>
 
-          {/* Tech Stack */}
+  
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, i) => (
               <motion.span 
@@ -112,11 +112,11 @@ function ProjectCard({ project, index }) {
             ))}
           </div>
 
-          {/* View Project Link */}
+      
           {project.link && (
             <motion.a 
               href={project.link}
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-blue-600 transition-colors text-sm group"
               whileHover={{ x: 5 }}

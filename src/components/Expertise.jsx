@@ -1,4 +1,4 @@
-// components/Experience.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { EXPERIENCES } from '../constants';

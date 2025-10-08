@@ -15,15 +15,6 @@ export default function Contact() {
           <p className="text-xl text-gray-300 mb-12">
             I'm always open to discussing new projects and opportunities.
           </p>
-          
-          <div className="space-y-4 mb-12">
-            <div className="text-lg">
-              <span className="text-gray-400">Email: </span>
-              <a href={`mailto:${CONTACT.email}`} className="hover:text-blue-400 transition-colors">
-                {CONTACT.email}
-              </a>
-            </div>
-          </div>
 
           <a 
             href={`mailto:${CONTACT.email}`}

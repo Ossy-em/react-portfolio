@@ -1,4 +1,4 @@
-// components/Hero.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa6';
