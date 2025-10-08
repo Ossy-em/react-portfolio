@@ -31,6 +31,7 @@ export const EXPERIENCES = [
       "Git",
       "Figma",
       "PostgreSQL",
+      "Postman",
     ],
   },
   {
@@ -60,7 +61,7 @@ export const EXPERIENCES = [
       "PostgreSQL",
       "Vercel",
       "Supabase",
-      
+      "Firebase",
     ],
   },
   {
@@ -106,7 +107,7 @@ export const PROJECTS = [
     description:
       "Built a Python bot that monitors verified economic calendars and forwards only high-impact events (NFP, CPI, FOMC, interest-rate decisions) as formatted alerts to Telegram. Focused on reliable fetching, duplicate suppression, and lightweight deployment.",
     technologies: ["Python3", "Telegram Bot"],
-    link: "https://github.com/Ossy-em/mt-news-forwarder"
+    link: "https://github.com/Ossy-em/mt-news-forwarder",
   },
 
   {
