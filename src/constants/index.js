@@ -76,6 +76,25 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title:
+      "SwiftChain: Simplifying Smart Contract Interaction Through Intuitive Design",
+    image: project2,
+    description:
+      "Developed a decentralized application (dApp) frontend that connects to a smart contract deployed on the Holesky testnet. Designed and implemented features that allow users to send transactions and view on-chain activity in real time. Focused on delivering a clean, intuitive interface that simplifies blockchain interactions for end users.",
+    technologies: [
+      "Vite",
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Ethers.js",
+      "Wagmi",
+      "Web3Modal",
+      "Holesky Testnet (Ethereum)",
+    ],
+
+    link: "https://swiftchain-six.vercel.app/",
+  },
+  {
+    title:
       "Building NFT Vault: Exploring Blockchain Integration and Digital Ownership",
     image: project6,
     description:
