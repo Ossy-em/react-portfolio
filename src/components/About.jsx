@@ -6,7 +6,7 @@ import { ABOUT_TEXT } from '../constants';
 import myImage from '../assets/ossy.jpeg';
 
 export default function About() {
-  const keyTechs = ["React", "Next.js", "TypeScript", "Tailwind CSS"];
+  const keyTechs = ["React", "Next.js","Javascript", "TypeScript", "Tailwind CSS"];
 
   return (
     <section id="about" className="py-20 px-6 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-white">
