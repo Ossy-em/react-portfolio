@@ -66,7 +66,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Jan 2022 - July 2022",
-    role: "Frontend Engineer (Intern)",
+    role: "Frontend Developer (Intern)",
     company: "Hiit ",
     description: `Worked as a frontend developer, gaining hands-on experience with HTML, CSS, JavaScript, and jQuery. Built various web applications, focusing on creating dynamic, responsive, and user-friendly interfaces. Developed foundational skills in web design, layout, and interactivity, setting the stage for future development in modern frontend technologies..`,
     technologies: ["JavaScript", "jQuery", "HTML", "CSS"],

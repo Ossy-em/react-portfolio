@@ -6,7 +6,7 @@ import { ABOUT_TEXT } from '../constants';
 import myImage from '../assets/ossy.jpeg';
 
 export default function About() {
-  const keyTechs = ["React", "Next.js","Javascript", "TypeScript", "Tailwind CSS"];
+  const keyTechs = ["React", "Next.js","Javascript", "TypeScript", "Tailwind CSS", "Firebase"];
 
   return (
     <section id="about" className="py-20 px-6 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-white">
@@ -39,7 +39,7 @@ export default function About() {
 
             <div className="flex-1 max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Ossy Emeruwa</h2>
-              <p className="text-lg text-gray-600 mb-6">Frontend Engineer</p>
+              <p className="text-lg text-gray-600 mb-6">Frontend Developer</p>
 
               <div className="flex items-center gap-3 mb-8">
                 <a 
