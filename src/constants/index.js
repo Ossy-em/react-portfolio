@@ -121,6 +121,23 @@ export const PROJECTS = [
   },
 
   {
+    title: "GadgetHub: A Full-Stack MERN Product Management System",
+    image: project9,
+    description:
+      "Built a complete MERN stack application for managing product inventory with full CRUD operations. Developed RESTful API endpoints using Next.js serverless functions, connected to MongoDB for data persistence, and created a modern, responsive UI with real-time updates. Deployed to Vercel with optimized performance and scalability.",
+    technologies: [
+      "MongoDB",
+      "Typescript",
+     "Next.js",
+      "Tailwind CSS",
+      "Mongoose",
+    
+    ],
+
+    link: "https://storehub-ten.vercel.app/",
+  },
+
+  {
     title: "Telegram Event Bot: Real-time High Impact News Alert",
     image: project7,
     description:
