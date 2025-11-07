@@ -7,6 +7,7 @@ import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/nft.png";
 import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
+import project9 from "../assets/projects/project-9.png";
 
 export const HERO_CONTENT = `I'm Ossy, a frontend developer exploring the future of blockchain and stocks — creating web apps that bridge innovation and real-world impact.`;
 
