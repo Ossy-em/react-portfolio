@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { HiSun, HiMoon } from "react-icons/hi";
+import { useTheme } from "../context/ThemeContext";
 import myImage from "../assets/ossy.jpeg";
 
 export default function Navbar({ scrolled, scrollToSection = () => {} }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     {
@@ -75,22 +78,24 @@ export default function Navbar({ scrolled, scrollToSection = () => {} }) {
 
   return (
     <>
+      {/* DESKTOP NAVBAR */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`hidden lg:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/90 backdrop-blur-lg shadow-lg"
-            : "bg-white/70 backdrop-blur-sm"
-        } rounded-full px-6 py-3 border border-gray-200`}
+            ? "bg-white/90 dark:bg-black/90 backdrop-blur-lg shadow-lg"
+            : "bg-white/70 dark:bg-black/70 backdrop-blur-sm"
+        } rounded-full px-6 py-3 border border-gray-200 dark:border-white/20`}
       >
         <div className="flex items-center justify-center gap-6">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="flex items-center gap-1.5 text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-1.5 rounded-full transition-all text-xs font-medium"
+              className="flex items-center gap-1.5 text-gray-700
+               dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 px-3 py-1.5 rounded-full transition-all text-xs font-medium"
             >
               <svg
                 className="w-3.5 h-3.5"
@@ -103,64 +108,96 @@ export default function Navbar({ scrolled, scrollToSection = () => {} }) {
               {item.label}
             </button>
           ))}
+          
+        
+          <motion.button
+            onClick={toggleTheme}
+            className="flex items-center gap-1.5 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 px-3 py-1.5 rounded-full transition-all  text-xs font-medium"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? (
+              <HiSun className="w-4 h-4" />
+            ) : (
+              <HiMoon className="w-4 h-4" />
+            )}
+          </motion.button>
         </div>
       </motion.nav>
 
-
+      {/* MOBILE NAVBAR */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`lg:hidden fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/90 backdrop-blur-lg shadow-lg"
-            : "bg-white/70 backdrop-blur-sm"
-        } rounded-2xl px-5 py-3.5 border border-gray-200`}
+            ? "bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg shadow-lg"
+            : "bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm"
+        } rounded-2xl px-5 py-3.5 border border-gray-200 dark:border-gray-700`}
       >
         <div className="flex items-center justify-between">
           <img
             src={myImage}
             alt="Profile"
-            className="w-8 h-8 rounded-full text-lg font-semibold text-gray-900"
+            className="w-8 h-8 rounded-full text-lg font-semibold cursor-pointer"
             onClick={() => scrollToSection("home")}
           />
 
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors active:scale-95"
-            aria-label="Toggle menu"
-          >
-            <motion.div
-              animate={mobileMenuOpen ? "open" : "closed"}
-              className="flex flex-col gap-1.5 items-center justify-center"
+          <div className="flex items-center gap-2">
+            {/* MOBILE THEME TOGGLE */}
+            <motion.button
+              onClick={toggleTheme}
+              className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors active:scale-95"
+              whileTap={{ scale: 0.95 }}
+              aria-label="Toggle theme"
             >
-              <motion.span
-                variants={{
-                  closed: { rotate: 0, y: 0 },
-                  open: { rotate: 45, y: 6 },
-                }}
-                className="w-5 h-0.5 bg-gray-900 rounded-full block"
-              />
-              <motion.span
-                variants={{
-                  closed: { opacity: 1 },
-                  open: { opacity: 0 },
-                }}
-                className="w-5 h-0.5 bg-gray-900 rounded-full block"
-              />
-              <motion.span
-                variants={{
-                  closed: { rotate: 0, y: 0 },
-                  open: { rotate: -45, y: -6 },
-                }}
-                className="w-5 h-0.5 bg-gray-900 rounded-full block"
-              />
-            </motion.div>
-          </button>
+              {theme === "dark" ? (
+                <HiSun className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+              ) : (
+                <HiMoon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+              )}
+            </motion.button>
+
+            {/* HAMBURGER MENU */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors active:scale-95"
+              aria-label="Toggle menu"
+            >
+              <motion.div
+                animate={mobileMenuOpen ? "open" : "closed"}
+                className="flex flex-col gap-1.5 items-center justify-center"
+              >
+                <motion.span
+                  variants={{
+                    closed: { rotate: 0, y: 0 },
+                    open: { rotate: 45, y: 6 },
+                  }}
+                  className="w-5 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full block"
+                />
+                <motion.span
+                  variants={{
+                    closed: { opacity: 1 },
+                    open: { opacity: 0 },
+                  }}
+                  className="w-5 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full block"
+                />
+                <motion.span
+                  variants={{
+                    closed: { rotate: 0, y: 0 },
+                    open: { rotate: -45, y: -6 },
+                  }}
+                  className="w-5 h-0.5 bg-gray-900 dark:bg-gray-100 rounded-full block"
+                />
+              </motion.div>
+            </button>
+          </div>
         </div>
       </motion.nav>
 
-
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -168,7 +205,7 @@ export default function Navbar({ scrolled, scrollToSection = () => {} }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden fixed inset-0 z-40 bg-black/20 backdrop-blur-sm"
+            className="lg:hidden fixed inset-0 z-40 bg-black/20 dark:bg-black/40 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           >
             <motion.div
@@ -176,7 +213,7 @@ export default function Navbar({ scrolled, scrollToSection = () => {} }) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="absolute top-20 left-4 right-4 bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
+              className="absolute top-20 left-4 right-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="p-2">
@@ -187,7 +224,7 @@ export default function Navbar({ scrolled, scrollToSection = () => {} }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
                     onClick={() => handleNavClick(item.id)}
-                    className="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-all text-sm font-medium active:scale-95"
+                    className="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all text-sm font-medium active:scale-95"
                   >
                     <svg
                       className="w-5 h-5"

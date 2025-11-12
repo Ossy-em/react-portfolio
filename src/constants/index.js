@@ -16,63 +16,73 @@ I’m a frontend developer, and deep-tech fan on a mission to build things that 
 
 export const EXPERIENCES = [
   {
-    year: "2025 - Present",
-    role: "Frontend Developer (UK, Remote)",
+    title: "Frontend Developer",
     company: "Axiom Fuse",
-    description: ` Work on building faster, smarter, and leaner - harnessing emerging technologies like AI and blockchain`,
+    type: "Remote, UK",
+    year: "2025 – Present",
+    description: [
+      "Developing frontend applications using Next.js, TypeScript, Tailwind, Framer Motion, Django, and Python for clients and internal projects.",
+      "Built a Python bot to monitor economic calendars and deliver high-impact alerts to Telegram, ensuring timely market insights.",
+      "Integrated Web3 features like swap, send, and ETH connect components, contributing to an AI-driven system that transforms project scoping into actionable development blueprints."
+    ],
     technologies: [
-      "React",
-      "Next.js",
-      "Angular",
-      "Tailwind",
-      "OpenseaAI",
-      "Wagmi",
-      "Web3Modal",
-      "AWS",
-      "Git",
-      "Figma",
-      "PostgreSQL",
-      "Postman",
+      "React", "Next.js", "Angular", "Tailwind", "OpenseaAI", "Wagmi", 
+      "Web3Modal", "AWS", "Git", "Figma", "PostgreSQL"
     ],
   },
   {
-    year: "2024 - 2025",
-    role: "Frontend Developer (Contract)",
+    title: "Frontend Developer",
+    company: "Serendipity AI",
+    type: "Contract",
+    year: "2025 – Present",
+    description: [
+      "Collaborated with a senior developer to build Flutter screens and reusable components for a mobile app connecting users based on intent and context.",
+      "Gained experience in mobile UI optimization, component design, and team-based workflows."
+    ],
+    technologies: ["Flutter", "Dart", "Firebase", "Git", "Figma"],
+  },
+  {
+    title: "Frontend Developer",
     company: "NSC",
-    description: `Developed a staff request portal using React.js and Firebase, enabling seamless form submissions, real-time data updates, and efficient request tracking. Designed user-friendly interfaces and integrated authentication and notification systems to enhance user experience.`,
-    technologies: ["Javascript", "React.js", "Next.js", "Tailwind", "Firebase"],
+    type: "Contract",
+    year: "2024 – 2025",
+    description: [
+      "Developed a staff request portal for 200+ employees, streamlining internal workflows and enabling real-time request tracking.",
+      "Built responsive, user-friendly interfaces with reusable components and integrated authentication and notifications.",
+      "Managed the full deployment lifecycle, ensuring maintainability and scalability."
+    ],
+    technologies: ["JavaScript", "React.js", "Next.js", "Tailwind", "Firebase"],
   },
-
   {
-    year: "January. 2022",
-    role: "Frontend Developer",
+    title: "Frontend Developer",
     company: "Freelancer",
-    description: `Developed numerous projects for clients, including landing pages, eCommerce platforms, and dashboards for various brands, delivering customized solutions that met client needs and received positive feedback.`,
+    type: "Remote",
+    year: "Jan 2022 – Present",
+    description: [
+      "Built Stock AI, a platform consolidating market insights, stock comparisons, and AI-driven analytics to help users make informed decisions.",
+      "Developed a dApp frontend interacting with my smart contract on the Holesky testnet, enabling ETH transactions and live on-chain updates.",
+      "Delivered client projects including eCommerce sites, dashboards, and portfolios, ensuring responsive and maintainable interfaces."
+    ],
     technologies: [
-      "React",
-      "Next.js",
-      "Tailwind",
-      "OpenseaAI",
-      "Wagmi",
-      "Web3Modal",
-      "Material UI",
-      "AWS",
-      "Git",
-      "Figma",
-      "PostgreSQL",
-      "Vercel",
-      "Supabase",
-      "Firebase",
+      "React", "Next.js", "Tailwind", "OpenseaAI", "Wagmi", "Web3Modal", 
+      "Material UI", "AWS", "Git", "Figma", "PostgreSQL", "Vercel", "Supabase", "Firebase"
     ],
   },
   {
-    year: "Jan 2022 - July 2022",
-    role: "Frontend Developer (Intern)",
-    company: "Hiit ",
-    description: `Worked as a frontend developer, gaining hands-on experience with HTML, CSS, JavaScript, and jQuery. Built various web applications, focusing on creating dynamic, responsive, and user-friendly interfaces. Developed foundational skills in web design, layout, and interactivity, setting the stage for future development in modern frontend technologies..`,
+    title: "Frontend Developer Intern",
+    company: "Hiit Plc",
+    type: "Internship",
+    year: "Jan 2022 – Jul 2022",
+    description: [
+      "Built and tested web interfaces using HTML, CSS, JavaScript, and jQuery.",
+      "Focused on dynamic, responsive, and user-friendly interfaces, gaining foundational frontend development skills.",
+      "Supported senior developers with debugging, testing, and small-scale project delivery."
+    ],
     technologies: ["JavaScript", "jQuery", "HTML", "CSS"],
   },
 ];
+
+
 
 export const PROJECTS = [
   {
@@ -125,14 +135,14 @@ export const PROJECTS = [
     title: "GadgetHub: A Full-Stack MERN Product Management System",
     image: project9,
     description:
-      "Built a complete MERN stack application for managing product inventory with full CRUD operations. Developed RESTful API endpoints using Next.js serverless functions, connected to MongoDB for data persistence, and created a modern, responsive UI with real-time updates. Deployed to Vercel with optimized performance and scalability.",
+      "Built a complete MERN stack application for managing product inventory with full CRUD operations. Developed RESTful API endpoints using Next.js serverless functions, connected to MongoDB for data persistence, and created a modern, responsive UI with real-time updates. ",
     technologies: [
       "MongoDB",
-      "Typescript",
-     "Next.js",
-      "Tailwind CSS",
       "Mongoose",
-    
+      "Next.js",
+      "Typescript",
+
+      "Tailwind CSS",
     ],
 
     link: "https://storehub-ten.vercel.app/",

@@ -4,8 +4,8 @@ import { CONTACT } from '../constants';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 bg-gray-900 text-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="contact" className="py-32 px-6 bg-gray-900 text-white dark:bg-black">
+      <div className="max-w-4xl mx-auto text-center dark:text-white ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
