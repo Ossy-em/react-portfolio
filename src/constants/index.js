@@ -11,12 +11,15 @@ import project9 from "../assets/projects/project-9.png";
 
 export const HERO_CONTENT = `I'm Ossy, a frontend developer exploring the future of blockchain and stocks — creating web apps that bridge innovation and real-world impact.`;
 
-export const ABOUT_TEXT = `
-I’m a frontend developer, and deep-tech fan on a mission to build things that actually matter. Lately, I’ve been really into blockchain and finance, finding ways to make complex systems feel simple and useful.`;
+export const ABOUT_TEXT = `I’m a frontend developer who likes building things that matter and actually get used.
+Lately, I’ve been spending most of my time on projects around finance, markets, and the blockchain space.
+I enjoy exploring how new tech trends shape the way we design and ship products.
+Always learning, always building. and when I’m not doing either, I’m probably watching Barca play.
+`;
 
 export const EXPERIENCES = [
   {
-    title: "Frontend Developer",
+    title: "Frontend Enginneer",
     company: "Axiom Fuse",
     type: "Remote, UK",
     year: "2025 – Present",
@@ -82,9 +85,22 @@ export const EXPERIENCES = [
   },
 ];
 
-
-
 export const PROJECTS = [
+    {
+    title: "Tradra: A Smarter Way to Track the Markets",
+    image: project8,
+    description:
+      "Tradra is an all-in-one platform for global market insights. It brings together live stock data, market indexes, news updates, smart comparisons, and a personal watchlist — all in one smooth, data-driven interface. The goal is to make market intelligence clearer, faster, and more accessible for everyone, with Pro features arriving in Q1 2026.",
+    technologies: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "MongoDB",
+      "BetterAuth",
+      "Inngest",
+    ],
+     link: "https://www.tradra.site/",
+  },
   {
     title:
       "SwiftChain: Simplifying Smart Contract Interaction Through Intuitive Design",
@@ -166,20 +182,7 @@ export const PROJECTS = [
     technologies: ["Javascript", "Framer Motion", "Tailwind"],
     link: "https://gpt1-ossy.vercel.app/",
   },
-  {
-    title: "Building Stock AI: A Smarter Way to Track the Markets",
-    image: project8,
-    description:
-      "Stock AI is an all-in-one platform for global market insights. It brings together live stock data, market indexes, news updates, and smart comparisons — all in one smooth, data-driven interface. The goal is to make market intelligence clearer, faster, and more accessible for everyone.",
-    technologies: [
-      "React",
-      "Next.js",
-      "Tailwind",
-      "Chart.js",
-      "OpenAI",
-      "Supabase",
-    ],
-  },
+
   {
     title:
       "Designed Gericht Fine Dining: A Modern Restaurant Website Experience",
