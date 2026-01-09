@@ -8,12 +8,12 @@ import project6 from "../assets/projects/nft.png";
 import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
+import project10 from "../assets/projects/project-10.webp";
+
 
 export const HERO_CONTENT = `I'm Ossy, a frontend developer exploring the future of blockchain and stocks — creating web apps that bridge innovation and real-world impact.`;
 
-export const ABOUT_TEXT = `I’m a frontend developer who likes building things that matter and actually get used.
-Lately, I’ve been spending most of my time on projects around finance, markets, and the blockchain space.
-I enjoy exploring how new tech trends shape the way we design and ship products.
+export const ABOUT_TEXT = `I’m a Frontend Developer focused on building structured, scalable interfaces using Next.js and TypeScript.I’m big on learning how the web evolves, from emerging AI tools to real shifts happening in finance, markets, and blockchain.I enjoy breaking down complex product ideas into simple, usable experiences that actually make sense to people.I share thoughts on tech trends, the future of web apps, and how AI is changing the way we ship products.
 Always learning, always building. and when I’m not doing either, I’m probably watching Barca play.
 `;
 
@@ -26,11 +26,20 @@ export const EXPERIENCES = [
     description: [
       "Developing frontend applications using Next.js, TypeScript, Tailwind, Framer Motion, Django, and Python for clients and internal projects.",
       "Built a Python bot to monitor economic calendars and deliver high-impact alerts to Telegram, ensuring timely market insights.",
-      "Integrated Web3 features like swap, send, and ETH connect components, contributing to an AI-driven system that transforms project scoping into actionable development blueprints."
+      "Integrated Web3 features like swap, send, and ETH connect components, contributing to an AI-driven system that transforms project scoping into actionable development blueprints.",
     ],
     technologies: [
-      "React", "Next.js", "Angular", "Tailwind", "OpenseaAI", "Wagmi", 
-      "Web3Modal", "AWS", "Git", "Figma", "PostgreSQL"
+      "React",
+      "Next.js",
+      "Angular",
+      "Tailwind",
+      "OpenseaAI",
+      "Wagmi",
+      "Web3Modal",
+      "AWS",
+      "Git",
+      "Figma",
+      "PostgreSQL",
     ],
   },
   {
@@ -40,7 +49,7 @@ export const EXPERIENCES = [
     year: "2025 – Present",
     description: [
       "Collaborated with a senior developer to build Flutter screens and reusable components for a mobile app connecting users based on intent and context.",
-      "Gained experience in mobile UI optimization, component design, and team-based workflows."
+      "Gained experience in mobile UI optimization, component design, and team-based workflows.",
     ],
     technologies: ["Flutter", "Dart", "Firebase", "Git", "Figma"],
   },
@@ -52,7 +61,7 @@ export const EXPERIENCES = [
     description: [
       "Developed a staff request portal for 200+ employees, streamlining internal workflows and enabling real-time request tracking.",
       "Built responsive, user-friendly interfaces with reusable components and integrated authentication and notifications.",
-      "Managed the full deployment lifecycle, ensuring maintainability and scalability."
+      "Managed the full deployment lifecycle, ensuring maintainability and scalability.",
     ],
     technologies: ["JavaScript", "React.js", "Next.js", "Tailwind", "Firebase"],
   },
@@ -64,11 +73,23 @@ export const EXPERIENCES = [
     description: [
       "Built Stock AI, a platform consolidating market insights, stock comparisons, and AI-driven analytics to help users make informed decisions.",
       "Developed a dApp frontend interacting with my smart contract on the Holesky testnet, enabling ETH transactions and live on-chain updates.",
-      "Delivered client projects including eCommerce sites, dashboards, and portfolios, ensuring responsive and maintainable interfaces."
+      "Delivered client projects including eCommerce sites, dashboards, and portfolios, ensuring responsive and maintainable interfaces.",
     ],
     technologies: [
-      "React", "Next.js", "Tailwind", "OpenseaAI", "Wagmi", "Web3Modal", 
-      "Material UI", "AWS", "Git", "Figma", "PostgreSQL", "Vercel", "Supabase", "Firebase"
+      "React",
+      "Next.js",
+      "Tailwind",
+      "OpenseaAI",
+      "Wagmi",
+      "Web3Modal",
+      "Material UI",
+      "AWS",
+      "Git",
+      "Figma",
+      "PostgreSQL",
+      "Vercel",
+      "Supabase",
+      "Firebase",
     ],
   },
   {
@@ -79,14 +100,14 @@ export const EXPERIENCES = [
     description: [
       "Built and tested web interfaces using HTML, CSS, JavaScript, and jQuery.",
       "Focused on dynamic, responsive, and user-friendly interfaces, gaining foundational frontend development skills.",
-      "Supported senior developers with debugging, testing, and small-scale project delivery."
+      "Supported senior developers with debugging, testing, and small-scale project delivery.",
     ],
     technologies: ["JavaScript", "jQuery", "HTML", "CSS"],
   },
 ];
 
 export const PROJECTS = [
-    {
+  {
     title: "Tradra: A Smarter Way to Track the Markets",
     image: project8,
     description:
@@ -99,7 +120,7 @@ export const PROJECTS = [
       "BetterAuth",
       "Inngest",
     ],
-     link: "https://www.tradra.site/",
+    link: "https://www.tradra.site/",
   },
   {
     title:
@@ -147,6 +168,13 @@ export const PROJECTS = [
     link: "https://soudemy-app.vercel.app/",
   },
 
+  {
+    title: "Built AdminPro: A Modern Glass Morphism Dashboard",
+    image: project10,
+    description: "A premium admin dashboard featuring a monochromatic design system with glass morphism, built on Next.js 14 and TypeScript. Includes real-time analytics visualizations, animated KPI cards, transaction management, and a collapsible sidebar—all with smooth Framer Motion animations and responsive layouts.",
+    technologies: ["Next js", "Tailwind"],
+    link: "https://dashbaord-inky.vercel.app/",
+  },
   {
     title: "GadgetHub: A Full-Stack MERN Product Management System",
     image: project9,
