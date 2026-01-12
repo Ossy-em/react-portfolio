@@ -168,29 +168,29 @@ export const PROJECTS = [
     link: "https://soudemy-app.vercel.app/",
   },
 
-  {
-    title: "Built AdminPro: A Modern Glass Morphism Dashboard",
-    image: project10,
-    description: "A premium admin dashboard featuring a monochromatic design system with glass morphism, built on Next.js 14 and TypeScript. Includes real-time analytics visualizations, animated KPI cards, transaction management, and a collapsible sidebar—all with smooth Framer Motion animations and responsive layouts.",
-    technologies: ["Next js", "Tailwind"],
-    link: "https://dashbaord-inky.vercel.app/",
-  },
-  {
-    title: "GadgetHub: A Full-Stack MERN Product Management System",
-    image: project9,
-    description:
-      "Built a complete MERN stack application for managing product inventory with full CRUD operations. Developed RESTful API endpoints using Next.js serverless functions, connected to MongoDB for data persistence, and created a modern, responsive UI with real-time updates. ",
-    technologies: [
-      "MongoDB",
-      "Mongoose",
-      "Next.js",
-      "Typescript",
+  // {
+  //   title: "Built AdminPro: A Modern Glass Morphism Dashboard",
+  //   image: project10,
+  //   description: "A premium admin dashboard featuring a monochromatic design system with glass morphism, built on Next.js 14 and TypeScript. Includes real-time analytics visualizations, animated KPI cards, transaction management, and a collapsible sidebar—all with smooth Framer Motion animations and responsive layouts.",
+  //   technologies: ["Next js", "Tailwind"],
+  //   link: "https://dashbaord-inky.vercel.app/",
+  // },
+  // {
+  //   title: "GadgetHub: A Full-Stack MERN Product Management System",
+  //   image: project9,
+  //   description:
+  //     "Built a complete MERN stack application for managing product inventory with full CRUD operations. Developed RESTful API endpoints using Next.js serverless functions, connected to MongoDB for data persistence, and created a modern, responsive UI with real-time updates. ",
+  //   technologies: [
+  //     "MongoDB",
+  //     "Mongoose",
+  //     "Next.js",
+  //     "Typescript",
 
-      "Tailwind CSS",
-    ],
+  //     "Tailwind CSS",
+  //   ],
 
-    link: "https://storehub-ten.vercel.app/",
-  },
+  //   link: "https://storehub-ten.vercel.app/",
+  // },
 
   {
     title: "Telegram Event Bot: Real-time High Impact News Alert",
@@ -201,15 +201,15 @@ export const PROJECTS = [
     link: "https://github.com/Ossy-em/mt-news-forwarder",
   },
 
-  {
-    title:
-      "Designed GPT-3: Showcasing AI Through a Modern, Minimal Landing Page",
-    image: project3,
-    description:
-      "A sleek and responsive landing page highlighting GPT-3’s core features, real-world use cases, and clear CTAs. The goal was to create a design that feels intelligent and futuristic while keeping the layout simple and easy to navigate.",
-    technologies: ["Javascript", "Framer Motion", "Tailwind"],
-    link: "https://gpt1-ossy.vercel.app/",
-  },
+  // {
+  //   title:
+  //     "Designed GPT-3: Showcasing AI Through a Modern, Minimal Landing Page",
+  //   image: project3,
+  //   description:
+  //     "A sleek and responsive landing page highlighting GPT-3’s core features, real-world use cases, and clear CTAs. The goal was to create a design that feels intelligent and futuristic while keeping the layout simple and easy to navigate.",
+  //   technologies: ["Javascript", "Framer Motion", "Tailwind"],
+  //   link: "https://gpt1-ossy.vercel.app/",
+  // },
 
   {
     title:
