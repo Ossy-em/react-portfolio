@@ -13,7 +13,7 @@ import project10 from "../assets/projects/project-10.webp";
 
 export const HERO_CONTENT = `I'm Ossy, a frontend developer exploring the future of blockchain and stocks — creating web apps that bridge innovation and real-world impact.`;
 
-export const ABOUT_TEXT = `I’m a Frontend Developer focused on building structured, scalable interfaces using Next.js and TypeScript.I’m big on learning how the web evolves, from emerging AI tools to real shifts happening in finance, markets, and blockchain.I enjoy breaking down complex product ideas into simple, usable experiences that actually make sense to people.I share thoughts on tech trends, the future of web apps, and how AI is changing the way we ship products.
+export const ABOUT_TEXT = `I’m a Frontend Developer focused on building structured, scalable interfaces using Next.js and TypeScript. I’m big on learning how the web evolves, from emerging AI tools to real shifts happening in finance, markets, and blockchain. I enjoy breaking down complex product ideas into simple, usable experiences that actually make sense to people.I share thoughts on tech trends, the future of web apps, and how AI is changing the way we ship products.
 Always learning, always building. and when I’m not doing either, I’m probably watching Barca play.
 `;
 
